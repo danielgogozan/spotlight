@@ -26,6 +26,7 @@ The app has been built mainly to exercise both Alamofire and Combine technologie
 Other interesting stuff touched:
 - Floating tab bar
 - UIBezierPath to draw some lines on the login screen
+- Paginated collection view
 
 # Explore
 ![App flow](https://i.ibb.co/j5S79Bg/image-8.png)
