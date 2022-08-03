@@ -1,5 +1,6 @@
 # spotlight
 Spotlight is a news app that provides means of searching and filtering news. 
+
 The app has been build mainly to exercise both Alamofire and Combine technologies alongside with Keychain and Core Data.
 
 # Technical requirements
@@ -33,4 +34,5 @@ Other interesting stuff touched:
 
 # Note
 [News API](https://newsapi.org/v2/)
+
 [Auth API](https://reqres.in/api/)
