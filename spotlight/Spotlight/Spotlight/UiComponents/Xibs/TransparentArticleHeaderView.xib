@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransparentArticleHeaderView" customModule="Spotlight" customModuleProvider="target">
+            <connections>
+                <outlet property="authorLabel" destination="xph-Sv-aMn" id="KO7-eq-Hnz"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="B3Q-Yp-hKV"/>
+                <outlet property="dateLabel" destination="RKu-8s-z9C" id="qjn-2R-X5i"/>
+                <outlet property="titleLabel" destination="zKK-aG-c20" id="V2p-hq-5um"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="194"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zno-HX-inr">
+                    <rect key="frame" x="0.0" y="0.0" width="410" height="194"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="W5B-M6-5Xh">
+                            <rect key="frame" x="15" y="15" width="380" height="164"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKu-8s-z9C" userLabel="Date Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="380" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKK-aG-c20" userLabel="Title Label">
+                                    <rect key="frame" x="0.0" y="35.5" width="380" height="93"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xph-Sv-aMn" userLabel="Author Label">
+                                    <rect key="frame" x="0.0" y="143.5" width="380" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="W5B-M6-5Xh" firstAttribute="leading" secondItem="Zno-HX-inr" secondAttribute="leading" constant="15" id="59N-tG-lXW"/>
+                        <constraint firstAttribute="trailing" secondItem="W5B-M6-5Xh" secondAttribute="trailing" constant="15" id="LRp-Zg-i2V"/>
+                        <constraint firstItem="W5B-M6-5Xh" firstAttribute="top" secondItem="Zno-HX-inr" secondAttribute="top" constant="15" id="RLN-yG-E2Z"/>
+                        <constraint firstAttribute="bottom" secondItem="W5B-M6-5Xh" secondAttribute="bottom" constant="15" id="ngc-tm-bXP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zno-HX-inr" secondAttribute="trailing" id="872-rq-z8X"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Zno-HX-inr" secondAttribute="bottom" id="8oH-iE-fVf"/>
+                <constraint firstItem="Zno-HX-inr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="edr-i6-fZW"/>
+                <constraint firstItem="Zno-HX-inr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="l1C-32-WmU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="134.78260869565219" y="-103.125"/>
+        </view>
+    </objects>
+</document>

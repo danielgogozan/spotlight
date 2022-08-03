@@ -1,0 +1,51 @@
+// MARK: - Tab bar
+
+"tab_home" = "Home";
+"tab_favorite" = "Favorite";
+"tab_profile" = "Profile";
+
+// MARK: - Home screen
+"latest_news" = "Latest News";
+"see_all" = "See All";
+
+// MARK: - Date & Time
+"yesterday" = "Yesterday at %@";
+"today" = "Today at %@";
+
+// Mark: - Article related
+"published_by" = "Published by %@";
+"hot_updates" = "Hot Updates";
+"read_more" = "...Read More";
+"read_less" = " Read Less";
+
+// Mark: - Search related
+"search_summary" = "About %@ results for %@";
+"filter" = "Filter";
+"reset_btn" = "Reset";
+"sort" = "Sort";
+"language" = "Language";
+"save_btn" = "SAVE";
+
+// Mark: Favorites tab
+"favorites_screen_title" = "Favorites";
+
+// MARK: Login
+"login_title" = "Login";
+"login_info" = "By signing in you are agreeing our Term and privacy policy";
+"login_info_link" = "Term and privacy policy";
+"login_remember_password" = "Remember password";
+"login_forget_password" = "Forget password";
+"login_button" = "Login";
+"login_register_button" = "Register";
+"login_with_face_id" = "Login with Face ID";
+"login_connect_with" = "or connect with";
+"login_facebook" = "Login with facebook";
+"login_instagram" = "Login with Instagram";
+"login_linkedin" = "Login with Linkedin";
+"login_email" = "Email Address";
+"login_password" = "Password";
+"login_with" = "Login with %@";
+"login_facebook" = "facebook";
+"login_instagram" = "Instagram";
+"login_linkedin" = "LinkedIn";
+"login_error" = "Wrong email address or password";

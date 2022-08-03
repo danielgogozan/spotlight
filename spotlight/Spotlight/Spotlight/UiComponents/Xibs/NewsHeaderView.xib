@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsHeaderView" customModule="Spotlight" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="VE2-pb-3fn"/>
+                <outlet property="imageView" destination="8Rq-xL-nsO" id="PHV-DC-89l"/>
+                <outlet property="seeAllButton" destination="KDM-nT-XWK" id="yeV-C1-Qua"/>
+                <outlet property="titleLabel" destination="GMw-hl-kiA" id="tpK-Gb-keR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vko-0K-Lah">
+                    <rect key="frame" x="0.0" y="0.0" width="409" height="76"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMw-hl-kiA">
+                            <rect key="frame" x="20" y="28" width="42.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDM-nT-XWK">
+                            <rect key="frame" x="289.5" y="22.5" width="68.5" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="See All"/>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="8Rq-xL-nsO">
+                            <rect key="frame" x="374" y="30.5" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="D1B-C5-scq"/>
+                                <constraint firstAttribute="width" constant="15" id="RfK-Oe-rhL"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="GMw-hl-kiA" firstAttribute="centerY" secondItem="vko-0K-Lah" secondAttribute="centerY" id="Hwl-TY-Toa"/>
+                        <constraint firstItem="GMw-hl-kiA" firstAttribute="leading" secondItem="vko-0K-Lah" secondAttribute="leading" constant="20" id="U1h-sh-7HR"/>
+                        <constraint firstItem="KDM-nT-XWK" firstAttribute="centerY" secondItem="vko-0K-Lah" secondAttribute="centerY" id="XNc-L3-ma4"/>
+                        <constraint firstItem="8Rq-xL-nsO" firstAttribute="leading" secondItem="KDM-nT-XWK" secondAttribute="trailing" constant="16" id="iAS-vx-tkv"/>
+                        <constraint firstAttribute="trailing" secondItem="8Rq-xL-nsO" secondAttribute="trailing" constant="20" id="iQM-O1-fqO"/>
+                        <constraint firstItem="8Rq-xL-nsO" firstAttribute="centerY" secondItem="vko-0K-Lah" secondAttribute="centerY" id="qFs-Dn-KMk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vko-0K-Lah" secondAttribute="trailing" id="Mmy-hO-6Xy"/>
+                <constraint firstItem="vko-0K-Lah" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VTh-2r-LJf"/>
+                <constraint firstAttribute="bottom" secondItem="vko-0K-Lah" secondAttribute="bottom" id="hUd-oD-KfS"/>
+                <constraint firstItem="vko-0K-Lah" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tPy-UO-FFX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="129.71014492753625" y="-172.09821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="right-arrow" width="18" height="15"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

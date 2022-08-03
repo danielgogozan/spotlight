@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="n0j-lh-YbQ" customClass="TagViewCell" customModule="Spotlight" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="266" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IDB-Zh-UBH">
+                <rect key="frame" x="0.0" y="0.0" width="266" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0GF-4x-03S" customClass="TagView" customModule="Spotlight" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="266" height="70"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0GF-4x-03S" firstAttribute="leading" secondItem="IDB-Zh-UBH" secondAttribute="leading" id="0t1-3c-1UY"/>
+                    <constraint firstAttribute="bottom" secondItem="0GF-4x-03S" secondAttribute="bottom" id="ABT-Ks-syS"/>
+                    <constraint firstItem="0GF-4x-03S" firstAttribute="top" secondItem="IDB-Zh-UBH" secondAttribute="top" id="m14-bd-ecc"/>
+                    <constraint firstAttribute="trailing" secondItem="0GF-4x-03S" secondAttribute="trailing" id="xha-4P-yMf"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="266" height="70"/>
+            <connections>
+                <outlet property="tagView" destination="0GF-4x-03S" id="wD6-s3-FYV"/>
+            </connections>
+            <point key="canvasLocation" x="-1" y="-70"/>
+        </collectionViewCell>
+    </objects>
+</document>

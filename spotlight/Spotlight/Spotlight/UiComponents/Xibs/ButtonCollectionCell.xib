@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="psn-WQ-Mdl" customClass="ButtonCollectionCell" customModule="Spotlight" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="4zY-1I-w5P">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDW-GX-yvh">
+                        <rect key="frame" x="0.0" y="0.0" width="415" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="415" id="0aj-G7-feh"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="saveButtonTapped:" destination="psn-WQ-Mdl" eventType="touchUpInside" id="ITz-F0-LmT"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lDW-GX-yvh" secondAttribute="trailing" id="4pZ-JR-tj3"/>
+                    <constraint firstItem="lDW-GX-yvh" firstAttribute="top" secondItem="4zY-1I-w5P" secondAttribute="top" id="hWW-Ob-YIE"/>
+                    <constraint firstItem="lDW-GX-yvh" firstAttribute="leading" secondItem="4zY-1I-w5P" secondAttribute="leading" id="kDF-OX-LYK"/>
+                    <constraint firstAttribute="bottom" secondItem="lDW-GX-yvh" secondAttribute="bottom" id="raD-hb-PGP"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="434" height="55"/>
+            <connections>
+                <outlet property="actionButton" destination="lDW-GX-yvh" id="vvU-B6-NTS"/>
+                <outlet property="widthActionButtonConstraint" destination="0aj-G7-feh" id="fG7-a5-DuK"/>
+            </connections>
+            <point key="canvasLocation" x="-155.07246376811597" y="43.861607142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>

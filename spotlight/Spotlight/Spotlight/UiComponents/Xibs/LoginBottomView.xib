@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginBottomView" customModule="Spotlight" customModuleProvider="target">
+            <connections>
+                <outlet property="connectLabel" destination="6jV-fk-UvP" id="Fsh-4I-nFF"/>
+                <outlet property="contentStackView" destination="9dC-rE-9y1" id="kuM-Ry-fbP"/>
+                <outlet property="faceImageContainer" destination="vRp-O3-z0g" id="h6u-7p-1nr"/>
+                <outlet property="faceImageView" destination="Kcb-n5-zwv" id="Cye-Wb-FkH"/>
+                <outlet property="faceLabel" destination="Vf7-kB-0dG" id="l1b-12-7xa"/>
+                <outlet property="socialMediaStackView" destination="3oW-2R-Jcz" id="mnB-Wf-1Wh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="143"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9dC-rE-9y1" userLabel="FID or Connect">
+                    <rect key="frame" x="0.0" y="0.0" width="424" height="143"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with Face ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf7-kB-0dG">
+                            <rect key="frame" x="142.5" y="0.0" width="139" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="black"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRp-O3-z0g">
+                            <rect key="frame" x="187" y="35.5" width="50" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faceid" translatesAutoresizingMaskIntoConstraints="NO" id="Kcb-n5-zwv">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="FSm-J1-UVl"/>
+                                        <constraint firstAttribute="width" constant="50" id="VcM-y9-HQL"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Kcb-n5-zwv" firstAttribute="centerY" secondItem="vRp-O3-z0g" secondAttribute="centerY" id="DDD-4j-ySH"/>
+                                <constraint firstAttribute="trailing" secondItem="Kcb-n5-zwv" secondAttribute="trailing" id="Dq6-ab-2Nl"/>
+                                <constraint firstItem="Kcb-n5-zwv" firstAttribute="leading" secondItem="vRp-O3-z0g" secondAttribute="leading" id="Qlo-Q7-98n"/>
+                                <constraint firstItem="Kcb-n5-zwv" firstAttribute="top" secondItem="vRp-O3-z0g" secondAttribute="top" id="ob4-RA-gtM"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="or connect with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jV-fk-UvP">
+                            <rect key="frame" x="153" y="100.5" width="118.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="black"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3oW-2R-Jcz" userLabel="Social Media Container">
+                            <rect key="frame" x="157" y="136" width="110" height="7"/>
+                            <variation key="heightClass=regular-widthClass=regular" axis="horizontal" spacing="10"/>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9dC-rE-9y1" secondAttribute="trailing" id="5Vf-Vm-6tj"/>
+                <constraint firstItem="9dC-rE-9y1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Nae-uY-fuX"/>
+                <constraint firstAttribute="bottom" secondItem="9dC-rE-9y1" secondAttribute="bottom" id="jgg-Ag-YJc"/>
+                <constraint firstItem="9dC-rE-9y1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lXc-EV-2Xf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="136.23188405797103" y="21.763392857142858"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="faceid" width="256" height="256"/>
+        <namedColor name="black">
+            <color red="0.18000000715255737" green="0.019999999552965164" blue="0.019999999552965164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

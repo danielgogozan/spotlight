@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Tab Bar Controller-->
+        <scene sceneID="dEm-bx-crI">
+            <objects>
+                <tabBarController storyboardIdentifier="CustomTabBarController" id="yxW-xG-3Fu" customClass="CustomTabBarController" customModule="Spotlight" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vPV-e1-c8m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UgO-PN-PeX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-419" y="222"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="sj2-gN-QgF">
+            <objects>
+                <tableViewController storyboardIdentifier="HomeViewController" id="Amf-Zb-Xx3" customClass="HomeViewController" customModule="Spotlight" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aji-Wr-oQn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Amf-Zb-Xx3" id="fv2-3y-E9b"/>
+                            <outlet property="delegate" destination="Amf-Zb-Xx3" id="eCa-Sb-C6i"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCo-Ld-hG1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="226"/>
+        </scene>
+        <!--Favorite View Controller-->
+        <scene sceneID="shc-jf-q2V">
+            <objects>
+                <viewController storyboardIdentifier="FavoriteViewController" id="MvG-w3-izF" customClass="FavoriteViewController" customModule="Spotlight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iJJ-mt-fCM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sZs-Ve-VNF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="J9v-YV-psR">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pVZ-00-80p">
+                                        <rect key="frame" x="15" y="10" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hym-8c-2ID">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEx-R5-z0I" userLabel="Scroll To Top View">
+                                <rect key="frame" x="187" y="64" width="40" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-search" translatesAutoresizingMaskIntoConstraints="NO" id="O1r-kq-eLk">
+                                        <rect key="frame" x="5" y="5" width="30" height="30"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="O1r-kq-eLk" secondAttribute="bottom" constant="5" id="HC1-TY-PcW"/>
+                                    <constraint firstItem="O1r-kq-eLk" firstAttribute="top" secondItem="yEx-R5-z0I" secondAttribute="top" constant="5" id="I0P-vv-CSA"/>
+                                    <constraint firstAttribute="width" constant="40" id="Plm-4z-ecw"/>
+                                    <constraint firstAttribute="height" constant="40" placeholder="YES" id="guA-EJ-gkL"/>
+                                    <constraint firstAttribute="trailing" secondItem="O1r-kq-eLk" secondAttribute="trailing" constant="5" id="uEC-KB-KD2"/>
+                                    <constraint firstItem="O1r-kq-eLk" firstAttribute="leading" secondItem="yEx-R5-z0I" secondAttribute="leading" constant="5" id="utY-Zq-f10"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pIS-gf-wnY" appends="YES" id="uuE-Ep-l39"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XKs-mb-6iR"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yEx-R5-z0I" firstAttribute="top" secondItem="XKs-mb-6iR" secondAttribute="top" constant="20" id="Bsf-Kj-0E0"/>
+                            <constraint firstAttribute="bottom" secondItem="sZs-Ve-VNF" secondAttribute="bottom" id="C1T-BR-Kzz"/>
+                            <constraint firstItem="sZs-Ve-VNF" firstAttribute="leading" secondItem="XKs-mb-6iR" secondAttribute="leading" id="HGa-xW-Meu"/>
+                            <constraint firstItem="yEx-R5-z0I" firstAttribute="centerX" secondItem="iJJ-mt-fCM" secondAttribute="centerX" id="j6a-MM-x3N"/>
+                            <constraint firstItem="XKs-mb-6iR" firstAttribute="trailing" secondItem="sZs-Ve-VNF" secondAttribute="trailing" id="qzh-ne-cDk"/>
+                            <constraint firstItem="sZs-Ve-VNF" firstAttribute="top" secondItem="XKs-mb-6iR" secondAttribute="top" id="wiO-9N-X3E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favCollectionView" destination="sZs-Ve-VNF" id="agz-gI-NnW"/>
+                        <outlet property="scrollToTopImageView" destination="O1r-kq-eLk" id="C4F-T4-bzI"/>
+                        <outlet property="scrollToTopView" destination="yEx-R5-z0I" id="YeO-9X-nr6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qv5-sk-lVJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pIS-gf-wnY">
+                    <connections>
+                        <action selector="scrollToTopTapped:" destination="MvG-w3-izF" id="IMB-G1-PzT"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1286.9565217391305" y="221.65178571428569"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="QOI-fi-gmw">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="SjA-Ff-7SZ" customClass="ProfileViewController" customModule="Spotlight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KFv-sZ-w1P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="R6b-X7-Hc1"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prg-yg-z21" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2203" y="222"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-search" width="14" height="13.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
