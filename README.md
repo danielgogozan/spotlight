@@ -1,7 +1,7 @@
 # spotlight
 Spotlight is a news app that provides means of searching and filtering news. 
 
-The app has been build mainly to exercise both Alamofire and Combine technologies alongside with Keychain and Core Data.
+The app has been built mainly to exercise both Alamofire and Combine technologies alongside with Keychain and Core Data.
 
 # Technical requirements
 
